@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Shops\Commands\CreateShop\" />
+    <Folder Include="Features\Shops\Commands\DeleteShop\" />
+    <Folder Include="Features\Shops\Commands\UpdateShop\" />
+    <Folder Include="Features\Shops\Queries\GetShopDetails\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BarberSuite.Domain\BarberSuite.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
